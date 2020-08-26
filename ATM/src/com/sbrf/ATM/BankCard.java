@@ -1,3 +1,5 @@
+package ATM.src.com.sbrf.ATM;
+
 import ATM.src.com.sbrf.client.*;
 import ATM.src.com.sbrf.DB.*;
 
