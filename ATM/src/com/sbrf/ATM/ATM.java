@@ -1,21 +1,22 @@
-import ATM.src.com.sbrf.client.*;
-import ATM.src.com.sbrf.DB.*;
+package com.sbrf.ATM;
 
-public class ATM{
-        private Bankdb Bank_db;
-        private Client client;
+import com.sbrf.DB.BankDb;
 
-        public ATM(Bankdb Bank_db, Client client){
-                this.Bank_db = Bank_db;
-                this.client= client;
-        }
-        private long getAccount(String bank_card_key){
-                return Bank_db.get_account(client.client_id, bank_card_key);
-        }
-        public long getcurrency(String bank_card_key){
-                return getAccount(bank_card_key).currency;
-        }
-        public long getbalance(String bank_card_key){
-                return getAccount(bank_card_key).balance;
-        }
+public class ATM {
+    private BankDb BankDb;
+
+    public ATM(BankDb bankDb){
+        BankDb = bankDb;
+    }
+
+    private long getAccount(String bank_card_key)
+    {
+        return Bank_db.get_account(bank_card_key);
+    }
+    public long getcurrency(String bank_card_key){
+        return getAccount(bank_card_key).currency;
+    }
+    public long getbalance(String bank_card_key){
+        return getAccount(bank_card_key).balance;
+    }
 }

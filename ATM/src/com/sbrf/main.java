@@ -1,7 +1,8 @@
-import ATM.*;
-import client.*;
-import DB.*;
+package com.sbrf;
 
-public static void main(String[]args){
+public class Main {
 
+    public static void main(String[] args) {
+	// write your code here
+    }
 }

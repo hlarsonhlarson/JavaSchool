@@ -1,4 +1,4 @@
-package ATM.src.com.sbrf.DB;
+package com.sbrf.DB;
 
 import ATM.src.com.sbrf.client.*;
 import ATM.src.com.sbrf.ATM.*;

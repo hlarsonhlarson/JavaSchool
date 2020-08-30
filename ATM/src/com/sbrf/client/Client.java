@@ -1,29 +1,25 @@
-package ATM.src.com.sbrf.client;
+package com.sbrf.client;
 
-import ATM.src.com.sbrf.DB.*;
-import ATM.src.com.sbrf.ATM.*;
+
+import com.sbrf.DB.Account;
+
+import java.util.HashMap;
 
 public class Client {
-    private String client_id;
-    private BankCard;
-    private HashMap<String, Account> clients_accounts;
+    private String ClientId;
+    private BankCard BankCard;
+    private HashMap<String, Account> ClientsAccounts;
 
     public Client(){
 
     }
 
-    public Client(String client_id) {
-        this.client_id = client_id
-        this.clients_accounts= new HashMap<>();
+    public Client(String clientId, BankCard bankCard, HashMap<String, Account> clientsAccounts) {
+        ClientId = clientId;
+        ClientsAccounts = clientsAccounts;
+        BankCard = bankCard;
     }
 
     public long getAccount(String bank_card_key, String pin){
-        try{
-            getClientInfo(bank_card_key, pin);
-        }
-        catch (IOException e){
-            System.println("Can't get client account");
-        }
-
     }
 }
