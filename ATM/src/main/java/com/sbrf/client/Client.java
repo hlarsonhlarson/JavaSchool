@@ -20,6 +20,6 @@ public class Client {
         BankCard = bankCard;
     }
 
-    public long getAccount(String bank_card_key, String pin){
-    }
+    /*public long getAccount(String bank_card_key, String pin){
+    }*/
 }
